@@ -1,0 +1,39 @@
+@media screen {
+    body {
+    }
+
+    #div {
+    }
+
+    #content {
+	margin: 0;
+	padding: 0;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 99%;
+        height: 92%;
+        min-height: 92%;
+        resize: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    a {
+	text-decoration: none;
+	color: #000;
+    }
+}
+
+@media print {
+    #div {
+        display: none;
+    }
+
+    #print {
+    }
+}

@@ -1,0 +1,128 @@
+body {
+	margin:1% auto;
+	padding:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	max-width:960px;
+	background:#171717;
+	color:#969696;
+	font-family:monospace;
+	text-transform:lowercase;
+}
+a {
+	text-decoration:none;
+}
+a:link, a:visited {
+	color:#f90;
+}
+a:hover {
+	color:#00ddff;
+	font-style:italic;
+}
+/* Header styles */
+#header {
+	clear:both;
+	float:left;
+	width:70%;
+}
+#header h1 {
+	position: relative;
+	left:26%;
+	font-size: 32px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	line-height:40%;
+}
+
+#header h2 {
+	position: relative;
+	left:31%;
+	top:-30px;;
+	font-weight: lighter;
+	font-size: 15px;
+	color: #fff;
+}
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+	top:-30px;
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+/* 2 Column (left menu) settings */
+.leftmenu {
+}
+.leftmenu .colleft {
+	right:82%;			/* right column width */
+}
+.leftmenu .col1 {
+	width:71%;			/* right column content width */
+	left:102%;			/* 100% plus left column left padding */
+}
+.leftmenu .col2 {
+	width:22%;			/* left column content width (column width minus left and right padding) */
+	left:6%;
+}
+.col1 h3 {
+	color: #fff;
+	line-height: 0px;
+}	
+
+.col1 p {
+	font-size: 11px;
+	line-height: 18px;
+}	
+.leftmenu .colleft {
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.col2 {
+	text-align: right;
+}
+.col2 h2{
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #333;
+	letter-spacing: 3px;
+	line-height: 18px;
+}
+
+.col2 li {
+	font-size: 9px;
+	list-style-type: none;
+	line-height: 16px;
+}
+
+/* Footer styles */
+#footer {
+	clear:both;
+	width:100%;
+	border-top:1px solid #ccc;
+}
+#footer img {
+	border: none;
+}
+
+#footer li {
+	font-size: 11px;
+	list-style-type: none;
+	display: inline;
+	float:right;
+}

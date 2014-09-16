@@ -1,0 +1,28 @@
+body { 
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: monospace;
+}
+
+textarea {
+	font-family: monospace;
+}
+
+#read a {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	color: #fff;
+}
+
+#watch a {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+img {
+	border: none;
+}
