@@ -35,18 +35,19 @@ $name = sanitize_file_name($_GET["f"]);
 <head>
     <meta charset="utf-8" />
     <title><?php print $name ?></title>
-<script src="<?php print $lists ?>js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="<?php print $lists ?>js/jquery.jeditable.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript" charset="utf-8">
-$(function() {
-  $(".editable_textile").editable("<?php print $phps ?>save.php?renderer=textile", { 
-      loadurl   : "<?php print $phps ?>load.php",
-      type      : "textarea",
-      submit    : "OK",
-      cancel    : "Cancel"
-  });
-});
-</script>
+    <link href="<?php print $lists ?>css/main.css" rel="stylesheet" type="text/css" />
+    <script src="<?php print $lists ?>js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="<?php print $lists ?>js/jquery.jeditable.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+    $(function() {
+      $(".editable_textile").editable("<?php print $phps ?>save.php?renderer=textile", { 
+        loadurl   : "<?php print $phps ?>load.php",
+        type      : "textarea",
+        submit    : "OK",
+        cancel    : "Cancel"
+      });
+    });
+    </script>
 </head>
 <body>
     <div class="editable_textile" id="<?php print $name ?>"><?php print file_get_contents($phps . "load.php?id=$name&renderer=textile") ?></div>
