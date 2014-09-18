@@ -38,7 +38,7 @@ $name = sanitize_file_name($_GET["f"]);
     <link href="<?php print $lists ?>css/main.css" rel="stylesheet" type="text/css" />
     <script src="<?php print $lists ?>js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="<?php print $lists ?>js/jquery.jeditable.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" charset="utf-8">
+    <script type="text/javascript">
     $(function() {
       $(".editable_textile").editable("<?php print $phps ?>save.php?renderer=textile", { 
         loadurl   : "<?php print $phps ?>load.php",
