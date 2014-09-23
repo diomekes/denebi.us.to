@@ -1,2 +1,8 @@
 gallery/
 tabs/
+lists/
+
+!lists/php/
+!lists/js/
+!lists/css/
+!lists/words.txt
