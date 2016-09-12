@@ -1,6 +1,6 @@
 *
 
 !lists/php/*
-!lists/js/
-!lists/css/
+!lists/js/*
+!lists/css/*
 !lists/words.txt
