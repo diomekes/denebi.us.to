@@ -1,6 +1,4 @@
-gallery/
-tabs/
-lists/
+*
 
 !lists/php/
 !lists/js/
